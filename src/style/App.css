@@ -1,0 +1,502 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  user-select: none;
+  overflow: hidden;
+}
+
+.Back-button {
+  position: absolute;
+  color: white;
+  width: 5%;
+  height: 5%;
+
+  min-width: 20px;
+  min-height: 20px;
+
+  left: 20px;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Back-button:hover {
+  cursor: pointer;
+}
+
+.Left-side-bar {
+  position: absolute;
+  width: 13%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+}
+
+.FitSharelogo {
+  text-align: center;
+  font-size: 50px;
+  color: yellow;
+  position: relative;
+  width: 100%;
+  height: 10%;
+  background: #383838;
+  display: block;
+}
+
+.FitSharelogo:hover {
+  cursor: pointer;
+}
+
+.Groups {
+  position: relative;
+  width: 100%;
+  height: 90%;
+  background: #272727;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.Group-icon {
+  position: relative;
+  width: 60%;
+  height: 0;
+  padding-bottom: 60%;
+  margin-top: 20px;
+
+  background-color: lightyellow;
+  filter: drop-shadow(-11px 15px 10px rgba(0, 0, 0, 0.25));
+  border-radius: 90px;
+}
+
+.Group-icon:hover {
+  margin-top: 10px;
+  border: 5px solid #cec70d;
+  cursor: pointer;
+}
+
+.Group-icon:active {
+  border: 5px solid #b3a900;
+}
+
+.Group-icon-selected {
+  position: relative;
+  width: 60%;
+  height: 0;
+  padding-bottom: 60%;
+  margin-top: 10px;
+
+  background-color: lightyellow;
+  border: 5px solid #fff500;
+  filter: drop-shadow(-11px 15px 10px rgba(0, 0, 0, 0.25));
+  border-radius: 90px;
+}
+
+.Group-icon-selected:hover {
+  border: 5px solid #cec70d;
+  cursor: pointer;
+}
+
+.Group-icon-selected:active {
+  border: 5px solid #b3a900;
+}
+
+.Middle {
+  position: absolute;
+  width: 63%;
+  height: 100%;
+  left: 13%;
+  background: #484848;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.Top-bar {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  font-weight: bold;
+  font-size: 30px;
+
+  text-align: center;
+  line-height: 75px;
+
+  background: #252525;
+}
+
+.Post-button {
+  position: relative;
+  color: black;
+  line-height: 75px;
+  width: 40%;
+  height: 80px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-weight: bold;
+
+  min-width: 130px;
+
+  background: #fff500;
+  border-radius: 100px;
+
+  filter: drop-shadow(-10px 10px 10px rgba(0, 0, 0, 0.25));
+}
+
+.Post-button:hover {
+  background: #cec70d;
+  cursor: pointer;
+}
+
+.Post-button:active {
+  background: #b3a900;
+}
+
+.Group-feed {
+  position: relative;
+  width: 100%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Post {
+  position: relative;
+  width: 80%;
+  height: auto;
+  padding: 20px;
+  padding-bottom: 40px;
+  text-align: left;
+
+  margin-top: 20px;
+
+  background: #323232;
+}
+
+.Post-likes {
+  position: absolute;
+  font-size: 20px;
+  top: 15px;
+  right: 45px;
+}
+
+.Thumb-icon {
+  position: absolute;
+  font-size: 30px;
+  top: 10px;
+  right: 10px;
+  color: yellow;
+}
+
+.Thumb-icon:hover {
+  color: #b6b00c;
+  cursor: pointer;
+}
+
+.Post-content {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 10px;
+  font-size: 24px;
+}
+
+.Post-description {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.Workout {
+  font-size: 20px;
+}
+
+.Exercise {
+  font-size: 17px;
+}
+
+.Post-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.Comment-input {
+  position: absolute;
+  bottom: -35px;
+  left: 5px;
+  width: 50%;
+}
+
+.Comment-icon {
+  position: absolute;
+  right: 5px;
+  bottom: -35px;
+  color: lightgray;
+  font-size: 20px;
+}
+
+.Comment-icon:hover {
+  color: #7c7c7c;
+  cursor: pointer;
+}
+
+.Comment-icon:active {
+  color: #4c4c4c;
+}
+
+.Comment-text {
+  font-size: 17px;
+}
+
+.Comment-input {
+  background: #484848;
+  color: whitesmoke;
+  text-indent: 10px;
+  font-size: 17px;
+  width: 200px;
+  height: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 90px;
+}
+
+.Right-side-bar {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  right: 0px;
+  top: -10px;
+  background: #272727;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Programs-button {
+  position: relative;
+  color: black;
+  line-height: 75px;
+  width: 80%;
+  height: 80px;
+  margin-top: 35px;
+  margin-bottom: 20px;
+
+  font-weight: bold;
+
+  background: #fff500;
+  border-radius: 20px;
+
+  filter: drop-shadow(-10px 10px 10px rgba(0, 0, 0, 0.25));
+}
+
+.Programs-button:hover {
+  background: #cec70d;
+  cursor: pointer;
+}
+
+.Programs-button:active {
+  background: #b3a900;
+}
+
+.Friends {
+  position: relative;
+  width: 90%;
+  height: 80%;
+  background: #272727;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  overflow-y: auto;
+}
+
+.Friend {
+  position: relative;
+  width: 95%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+.Friend-profile-pic {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+
+  background-color: lightyellow;
+  border: 1px solid black;
+  filter: drop-shadow(-5px 8px 4px rgba(0, 0, 0, 0.5));
+  border-radius: 90px;
+}
+
+.Friend-name {
+  position: relative;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100%;
+  line-height: 48px;
+  text-align: center;
+  margin-left: 10px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+
+  color: #ffffff;
+}
+
+.Add-friend-icon {
+  position: absolute;
+  width: 10%;
+  height: 5%;
+
+  min-width: 20px;
+  min-height: 20px;
+
+  left: 3%;
+  top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Add-friend-icon:hover {
+  color: #fff700;
+  cursor: pointer;
+}
+
+.Add-group {
+  position: absolute;
+  width: 15%;
+  height: 5%;
+  min-width: 20px;
+  min-height: 20px;
+  right: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Add-group:hover {
+  color: #fff700;
+  cursor: pointer;
+}
+
+.Streak-box {
+  position: relative;
+  width: 90%;
+  height: 60px;
+  right: 0px;
+  top: 20px;
+  background: #272727;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.StreakCount {
+  /* position: relative; */
+  font-size: 35px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  color: yellow;
+}
+
+.Streak-icon {
+  /* position: relative; */
+  width: 50px;
+  height: 50px;
+  /* font-size: 40px; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  color: orangered;
+}
+
+.Sign-out-button {
+  position: relative;
+  color: black;
+  line-height: 15px;
+  width: 80px;
+  min-width: 70px;
+  height: 30px;
+  margin-left: 10%;
+
+  font-weight: bold;
+
+  background: #fff500;
+  border-radius: 20px;
+
+  filter: drop-shadow(-10px 10px 10px rgba(0, 0, 0, 0.25));
+}
+
+.Sign-out-button:hover {
+  background: #cec70d;
+  cursor: pointer;
+}
+
+.Sign-out-button:active {
+  background: #b3a900;
+}
+
+.Remove-member {
+  align-items: right;
+  margin-left: 70%;
+  margin-top: -12.5%;
+}
+
+
+.Remove-member:hover {
+  color: yellow;
+  cursor: pointer;
+}
+
+.Member-container {
+  /*display: flex;*/
+  justify-content: space-between;
+  align-items: left;
+}
+
+.Member-name {
+  align-items: left;
+  width: 78%;
+}
+
+.Delete-icon {
+  position: absolute;
+  font-size: 30px;
+  top: 12px;
+  right: 70px;
+  color: rgb(200, 10, 10);
+}
+
+.Delete-icon:hover {
+  color: #ac0303;
+  cursor: pointer;
+}
